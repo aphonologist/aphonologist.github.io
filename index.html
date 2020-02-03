@@ -3,7 +3,8 @@
 <head>
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
+  var userInput = document.getElementByName("phonostring").value;
+  document.getElementById("demo").innerHTML = userInput;
 }
 </script>
 </head>
