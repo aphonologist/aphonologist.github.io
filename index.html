@@ -3,7 +3,7 @@
 <head>
 <script>
 function myFunction() {
-  var userInput = document.getElementByName("phonostring").value;
+  var userInput = document.getElementById("phonostring").value;
   document.getElementById("demo").innerHTML = userInput;
 }
 </script>
@@ -12,7 +12,7 @@ function myFunction() {
 
 <h2>JavaScript in Head</h2>
   
-  <input type="text" name="phonostring"> </input>
+  <input type="text" id="phonostring"> </input>
 
 <p id="demo">A Paragraph.</p>
 
