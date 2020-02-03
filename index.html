@@ -13,6 +13,7 @@ table, th, td {
 function myFunction() {
   var oldString = document.getElementById("demo").innerHTML;
   var userInput = document.getElementById("phonostring").value;
+  document.getElementById("phonostring").innerHTML = "";
   oldString = oldString + " " + userInput;
   document.getElementById("demo").innerHTML = oldString;
   if (userInput == "#") {
