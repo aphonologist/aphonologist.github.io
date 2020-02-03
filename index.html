@@ -10,6 +10,9 @@ function myFunction() {
   if (userInput == "#") {
       document.getElementById("enter").disabled = true;
   }
+  if (userInput == "AA") {
+      document.getElementById("AArange").innerHTML = 2-9;
+  }
 }
 function myFunction2() {
   document.getElementById("demo").innerHTML = "";  
@@ -27,6 +30,13 @@ function myFunction2() {
 <button type="button" onclick="myFunction()" id="enter">Enter phoneme</button>
   
 <button type="button" onclick="myFunction2()">Reset</button>
+  
+<table>
+  <tr>
+    <td>AA</td>
+    <td id="AArange">1-10</td>
+  </tr>
+</table>
 
 </body>
 </html> 
