@@ -3,8 +3,10 @@
 <head>
 <script>
 function myFunction() {
+  var oldString = document.getElementById("demo").innerHTML;
   var userInput = document.getElementById("phonostring").value;
-  document.getElementById("demo").innerHTML = userInput;
+  oldString = oldString + " " + userInput;
+  document.getElementById("demo").innerHTML = oldString;  
 }
 </script>
 </head>
@@ -14,7 +16,7 @@ function myFunction() {
   
   <input type="text" id="phonostring"> </input>
 
-<p id="demo">A Paragraph.</p>
+<p id="demo">#</p>
 
 <button type="button" onclick="myFunction()">Try it</button>
 
