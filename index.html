@@ -13,7 +13,6 @@ table, th, td {
 function myFunction(buttonInput) {
   var oldString = document.getElementById("demo").innerHTML;
   var userInput = document.getElementById("phonostring").value;
-  document.getElementById("phonostring").innerHTML = "";
   oldString = oldString + " " + buttonInput;
   document.getElementById("demo").innerHTML = oldString;
   if (buttonInput == "#") {
@@ -103,7 +102,7 @@ function bigrams() {
   
 <table>
   <tr>
-    <td><button type="button" onclick="myFunction("#")" id="enter">#/button></td>
+    <td><button type="button" onclick="myFunction("#")" id="enter">#</button></td>
     <td id="#range"></td>
     <td>K</td>
     <td id="Krange"></td>
