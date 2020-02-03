@@ -10,12 +10,12 @@ table, th, td {
     }
 </style>
 <script>
-function myFunction(buttonInput) {
+function myFunction() {
   var oldString = document.getElementById("demo").innerHTML;
   var userInput = document.getElementById("phonostring").value;
-  oldString = oldString + " " + buttonInput;
+  oldString = oldString + " " + userInput;
   document.getElementById("demo").innerHTML = oldString;
-  if (buttonInput == "#") {
+  if (userInput == "#") {
       document.getElementById("enter").disabled = true;
   }
   
@@ -102,7 +102,7 @@ function bigrams() {
   
 <table>
   <tr>
-    <td><button type="button" onclick="myFunction("#")">#</button></td>
+    <td>#</td>
     <td id="#range"></td>
     <td>K</td>
     <td id="Krange"></td>
