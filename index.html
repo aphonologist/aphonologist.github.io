@@ -6,7 +6,13 @@ function myFunction() {
   var oldString = document.getElementById("demo").innerHTML;
   var userInput = document.getElementById("phonostring").value;
   oldString = oldString + " " + userInput;
-  document.getElementById("demo").innerHTML = oldString;  
+  document.getElementById("demo").innerHTML = oldString;
+  if (userInput == "#") {
+      document.getElementById("enter").disabled = true;
+  }
+}
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "";  
 }
 </script>
 </head>
@@ -18,7 +24,9 @@ function myFunction() {
 
 <p id="demo">#</p>
 
-<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="myFunction()" id="enter">Enter phoneme</button>
+  
+<button type="button" onclick="myFunction2()">Reset</button>
 
 </body>
 </html> 
