@@ -16,23 +16,12 @@ function myFunction2() {
   document.getElementById("demo").innerHTML = "#";  
   document.getElementById("enter").disabled = false;
 }
-</script>
-</head>
-<body>
 
-<h2>JavaScript in Head</h2>
+function unigrams() {
+  document.getElementById("demo").innerHTML = "#";  
   
-  <input type="text" id="phonostring"> </input>
-
-<p id="demo">#</p>
-
-<p id="error"></p>
   
-<button type="button" onclick="myFunction()" id="enter">Enter phoneme</button>
-  
-<button type="button" onclick="myFunction2()">Reset</button>
-  
-<table>
+  <table>
   <tr>
     <td>#</td>
     <td id="#range">0-7</td>
@@ -152,6 +141,157 @@ function myFunction2() {
     <td id="JHrange">68-69</td>
     <td>ZH</td>
     <td id="ZHrange">139-140</td>
+  </tr>
+</table>
+  document.getElementById("enter").disabled = false;
+  document.getElementById("info").innerHTML = "Roll 2 D10s, a D20, a D12, a D8, a D6, and a D4 twice, and add their totals value.";
+}
+
+function bigrams() {
+  document.getElementById("demo").innerHTML = "#";  
+  document.getElementById("enter").disabled = false;
+}
+</script>
+</head>
+<body>
+
+<h2>English phonotactics with D and D dice</h2>
+  
+  <input type="text" id="phonostring"> </input>
+
+<p id="demo">#</p>
+  
+<p> Roll 2 D10s, a D20, a D12, a D8, a D6, and a D4 twice, and add their totals value to select the next phoneme.</p>
+
+  
+<button type="button" onclick="myFunction()" id="enter">Enter phoneme</button>
+  
+<button type="button" onclick="myFunction2()">Reset</button>
+  
+<button type="button" onclick="unigrams()">Use unigrams</button>
+
+<button type="button" onclick="bigrams()">Use bigrams</button>
+  
+<table>
+  <tr>
+    <td>#</td>
+    <td id="#range"></td>
+    <td>K</td>
+    <td id="Krange"></td>
+  </tr>
+  <tr>
+    <td>AA</td>
+    <td id="AArange"></td>
+    <td>L</td>
+    <td id="Lrange"></td>
+  </tr>
+  <tr>
+    <td>AE</td>
+    <td id="AErange"></td>
+    <td>M</td>
+    <td id="Mrange"></td>
+  </tr>
+  <tr>
+    <td>AH</td>
+    <td id="AHrange"></td>
+    <td>N</td>
+    <td id="Nrange"></td>
+  </tr>
+  <tr>
+    <td>AO</td>
+    <td id="AOrange"></td>
+    <td>NG</td>
+    <td id="NGrange"></td>
+  </tr>
+  <tr>
+    <td>AW</td>
+    <td id="AWrange"></td>
+    <td>OW</td>
+    <td id="OWrange"></td>
+  </tr>
+  <tr>
+    <td>AY</td>
+    <td id="AYrange"></td>
+    <td>OY</td>
+    <td id="OYrange"></td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td id="Brange"></td>
+    <td>P</td>
+    <td id="Prange"></td>
+  </tr>  
+  <tr>
+    <td>CH</td>
+    <td id="CHrange"></td>
+    <td>R</td>
+    <td id="Rrange"></td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td id="Drange"></td>
+    <td>S</td>
+    <td id="Srange"></td>
+  </tr>
+  <tr>
+    <td>DH</td>
+    <td id="DHrange"></td>
+    <td>SH</td>
+    <td id="SHrange"></td>
+  </tr>
+  <tr>
+    <td>EH</td>
+    <td id="EHrange"></td>
+    <td>T</td>
+    <td id="Trange"></td>
+  </tr>
+  <tr>
+    <td>ER</td>
+    <td id="ERrange"></td>
+    <td>TH</td>
+    <td id="THrange"></td>
+  </tr>
+  <tr>
+    <td>EY</td>
+    <td id="EYrange"></td>
+    <td>UH</td>
+    <td id="UHrange"></td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td id="Frange"></td>
+    <td>UW</td>
+    <td id="UWrange"></td>
+  </tr>  
+  <tr>
+    <td>G</td>
+    <td id="Grange"></td>
+    <td>V</td>
+    <td id="Vrange"></td>
+  </tr>
+  <tr>
+    <td>HH</td>
+    <td id="HHrange"></td>
+    <td>W</td>
+    <td id="Wrange"></td>
+  </tr>
+  <tr>
+    <td>IH</td>
+    <td id="IHrange"></td>
+    <td>Y</td>
+    <td id="Yrange"></td>
+  </tr>  
+  <tr>
+    <td>IY</td>
+    <td id="IYrange"></td>
+    <td>Z</td>
+    <td id="Zrange"></td>
+  </tr>
+  <tr>
+    <td>JH</td>
+    <td id="JHrange"></td>
+    <td>ZH</td>
+    <td id="ZHrange"></td>
   </tr>
 </table>
 
