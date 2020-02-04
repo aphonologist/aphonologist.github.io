@@ -21,12 +21,12 @@ function myFunction() {
   document.getElementById('phonostring').value = ''
 }
 function myFunction2() {
-  document.getElementById("demo").innerHTML = "#";  
+  document.getElementById("demo").innerHTML = "";  
   document.getElementById("enter").disabled = false;
 }
 
 function unigrams() {
-  document.getElementById("demo").innerHTML = "#";  
+  document.getElementById("demo").innerHTML = "";  
   
   document.getElementById("#range").innerHTML = "0-7";
   document.getElementById("Krange").innerHTML = "70-74";
@@ -73,11 +73,10 @@ function unigrams() {
 }
 
 function bigrams() {
-  document.getElementById("demo").innerHTML = "# #";  
+  document.getElementById("demo").innerHTML = "#";  
   document.getElementById("enter").disabled = false;
   
   var phonA = "#";
-  var phonB = "#";
 }
 </script>
 </head>
@@ -87,7 +86,7 @@ function bigrams() {
   
   <input type="text" id="phonostring"> </input>
 
-<p id="demo">#</p>
+<p id="demo"></p>
   
 <p> Roll 2 D10s, a D20, a D12, a D8, a D6, and a D4 twice, and add their totals to select the next phoneme, or pick a number randomly between 0 and 140.</p>
 
