@@ -30,92 +30,53 @@ function unigrams() {
   
   var unidict = {
   "#": "0-7",
-  "K": "70-74",
   "AA": "8-10",
-  "L": "75-80",
   "AE": "11-13",
-  "M": "81-84",
   "AH": "14-22",
-  "N": "85-91",
-  "AO": "23-24",
-  "NG": "92-93",
-  "AW": "25-26",
-  "OW": "94-95",
-  "AY": "27-28",
-  "OY": "96-97",
+  "AO": "23-24",  
+  "AW": "25-26",  
+  "AY": "27-28",  
   "B": "29-31",
-  "P": "98-101",
   "CH": "32-33",
-  "R": "102-107",
   "D": "34-38",
-  "S": "108-113",
   "DH": "39-40",
-  "SH": "114-115",
   "EH": "41-44",
-  "T": "116-122",
   "ER": "45-48",
-  "TH": "123-124",
   "EY": "49-51",
-  "UH": "125-126",
   "F": "52-53",
-  "UW": "127-128",
   "G": "54-55",
-  "V": "129-130",
   "HH": "56-57",
-  "W": "131-132",
+  "IH": "58-63",
   "I": "58-63",
-  "Y": "133-134",
   "IY": "64-67",
-  "Z": "135-138",
   "JH": "68-69",
+  "K": "70-74",
+  "L": "75-80",
+  "M": "81-84",
+  "N": "85-91",
+  "NG": "92-93",
+  "OW": "94-95",
+  "OY": "96-97", 
+  "P": "98-101",
+  "R": "102-107", 
+  "S": "108-113", 
+  "SH": "114-115",
+  "T": "116-122",
+  "TH": "123-124",
+  "UH": "125-126",
+  "UW": "127-128",
+  "V": "129-130",
+  "W": "131-132",
+  "Y": "133-134",
+  "Z": "135-138",
   "ZH": "139-140"
+  
 };
   for(var key in unidict) {
     var value = unidict[key];
     var update = key + "range";
     document.getElementById(update).innerHTML = value;
 }
-  
-//  document.getElementById("#range").innerHTML = "0-7";
-//  document.getElementById("Krange").innerHTML = "70-74";
-//  document.getElementById("AArange").innerHTML = "8-10";
-//  document.getElementById("Lrange").innerHTML = "75-80";
-//  document.getElementById("AErange").innerHTML = "11-13";
-//  document.getElementById("Mrange").innerHTML = "81-84";
-//  document.getElementById("AHrange").innerHTML = "14-22";
-//  document.getElementById("Nrange").innerHTML = "85-91";
-//  document.getElementById("AOrange").innerHTML = "23-24";
-//  document.getElementById("NGrange").innerHTML = "92-93";
-//  document.getElementById("AWrange").innerHTML = "25-26";
-//  document.getElementById("OWrange").innerHTML = "94-95";
-//  document.getElementById("AYrange").innerHTML = "27-28";
-//  document.getElementById("OYrange").innerHTML = "96-97";
-//  document.getElementById("Brange").innerHTML = "29-31";
-//  document.getElementById("Prange").innerHTML = "98-101";
-//  document.getElementById("CHrange").innerHTML = "32-33";
-//  document.getElementById("Rrange").innerHTML = "102-107";
-//  document.getElementById("Drange").innerHTML = "34-38";
-//  document.getElementById("Srange").innerHTML = "108-113";
-//  document.getElementById("DHrange").innerHTML = "39-40";
-//  document.getElementById("SHrange").innerHTML = "114-115";
-//  document.getElementById("EHrange").innerHTML = "41-44";
-//  document.getElementById("Trange").innerHTML = "116-122";
-//  document.getElementById("ERrange").innerHTML = "45-48";
-//  document.getElementById("THrange").innerHTML = "123-124";
-//  document.getElementById("EYrange").innerHTML = "49-51";
-//  document.getElementById("UHrange").innerHTML = "125-126";
-//  document.getElementById("Frange").innerHTML = "52-53";
-//  document.getElementById("UWrange").innerHTML = "127-128";
-//  document.getElementById("Grange").innerHTML = "54-55";
-//  document.getElementById("Vrange").innerHTML = "129-130";
-//  document.getElementById("HHrange").innerHTML = "56-57";
-//  document.getElementById("Wrange").innerHTML = "131-132";
-//  document.getElementById("IHrange").innerHTML = "58-63";
-//  document.getElementById("Yrange").innerHTML = "133-134";
-//  document.getElementById("IYrange").innerHTML = "64-67";
-//  document.getElementById("Zrange").innerHTML = "135-138";
-//  document.getElementById("JHrange").innerHTML = "68-69";
-//  document.getElementById("ZHrange").innerHTML = "139-140";
 
   document.getElementById("enter").disabled = false;
 }
