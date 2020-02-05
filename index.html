@@ -71,7 +71,7 @@ function unigrams() {
   "ZH": "139-140"
 };
   for(var key in unidict) {
-    var value = dict[key];
+    var value = unidict[key];
     var update = key + "range";
     document.getElementById(update).innerHTML = value;
 }
