@@ -1656,6 +1656,49 @@ table, th, td {
   "ZH": "139-140"
 };
   
+  var aaripa = {
+  "#":  "#",
+  "AA": "&#97;",
+  "AE": "&#230;",
+  "AH": "&#652;",
+  "AO": "&#596;",  
+  "AW": "&#97;&#650;",  
+  "AY": "&#97;&#618;", 
+  "B":  "&#98;",
+  "CH": "&#116;&#865;",
+  "D":  "&#100;",
+  "DH": "&#240;",
+  "EH": "&#603;",
+  "ER": "&#734;",
+  "EY": "&#101;&#618;",
+  "F":  "&#102;",
+  "G":  "&#609;",
+  "HH": "&#104;",
+  "IH": "&#618;",
+  "IY": "&#105;",
+  "JH": "&#100;&#865;",
+  "K":  "&#107;",
+  "L":  "&#108;",
+  "M":  "&#109;",
+  "N":  "&#110;",
+  "NG": "&#331;",
+  "OW": "&#111;&#650;",
+  "OY": "&#596;&#618;",
+  "P":  "&#112;",
+  "R":  "&#633;",
+  "S":  "&#115;",
+  "SH": "&#643;",
+  "T":  "&#116;",
+  "TH": "&#952;",
+  "UH": "&#650;",
+  "UW": "&#117;",
+  "V":  "&#118;",
+  "W":  "&#119;",
+  "Y":  "&#106;",
+  "Z":  "&#122;",
+  "ZH": "&#658;"
+};
+  
   var type;
   
 function myFunction() {
@@ -1663,6 +1706,10 @@ function myFunction() {
   var userInput = document.getElementById("phonostring").value;
   oldString = oldString + " " + userInput;
   document.getElementById("demo").innerHTML = oldString;
+  
+  var oldipa = document.getElementById("ipa").innerHTML;
+  oldipa = aaripa[userInput];
+  document.getElementById("ipa").innerHTML = oldipa;
   
   if (type == 'unigram') {
     for(var key in unidict) {
@@ -1685,7 +1732,8 @@ function myFunction() {
   document.getElementById('phonostring').value = ''
 }
 function myFunction2() {
-  document.getElementById("demo").innerHTML = "#";  
+  document.getElementById("demo").innerHTML = "#";
+  document.getElementById("ipa").innerHTML = "#";  
   document.getElementById("enter").disabled = false;
 }
   
@@ -1724,7 +1772,9 @@ function bigrams(lastPhon = "#") {
   
   <input type="text" id="phonostring"> </input>
 
-<p id="demo"></p>
+<p id="demo">#</p>
+
+<p id="ipa">#</p>
   
 <p> Roll 2 D10s, a D20, a D12, a D8, a D6, and a D4 twice, and add their totals to select the next phoneme, or pick a number randomly between 0 and 140.</p>
 
