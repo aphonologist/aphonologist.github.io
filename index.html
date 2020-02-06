@@ -1698,7 +1698,7 @@ function bigrams(lastPhon = "#") {
   document.getElementById("enter").disabled = false;
   
   for(var unikey in unidict) {
-    key = lastPhon + " " + unikey
+    key = lastPhon + " " + unikey + " ";
     var value = bidict[key];
     var update = key + "range";
     document.getElementById(update).innerHTML = value;
