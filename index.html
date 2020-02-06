@@ -2,13 +2,14 @@
 <html>
 <head>
   <style>
-table, th, td {
-  border: 1px solid black;
-}
-    td {
+  table, th, td {
+    border: 1px solid black;
+  }
+  td {
       width:100px;
-    }
+  }
 </style>
+
 <script>
     var bidict = {
 "#  # ":"n/a",
@@ -7465,6 +7466,7 @@ table, th, td {
 "AH OW AW": "25-28",
 "AH OW AY": "29-32",
 "AH OW B": "33-35",
+
 "AH OW CH": "36-39",
 "AH OW D": "40-44",
 "AH OW DH": "45-49",
@@ -65703,9 +65705,9 @@ table, th, td {
   "ZH": "&#658;"
 };
   
-  var type;
-  var phonA = '#';
-  var phonB = '#';
+var type;
+var phonA = '#';
+var phonB = '#';
   
 function myFunction() {
   var oldString = document.getElementById("demo").innerHTML;
@@ -65719,29 +65721,30 @@ function myFunction() {
   
   if (type == 'unigram') {
     for(var key in unidict) {
-    var value = unidict[key];
-    var update = key + "range";
-    document.getElementById(update).innerHTML = value;
-}
+      var value = unidict[key];
+      var update = key + "range";
+      document.getElementById(update).innerHTML = value;
+    }
   }
+
   if (type == 'bigram') {
     for(var unikey in unidict) {
-    key = userInput + "  " + unikey + " ";
-    var value = bidict[key];
-    var update = unikey + "range";
-    document.getElementById(update).innerHTML = value;
+      key = userInput + "  " + unikey + " ";
+      var value = bidict[key];
+      var update = unikey + "range";
+      document.getElementById(update).innerHTML = value;
+    }
   }
-}
   if (type == 'trigram') {
     for(var unikey in unidict) {
-    key = phonA + "  " phonB + " " + unikey;
-    var value = tridict[key];
-    var update = unikey + "range";
-    document.getElementById(update).innerHTML = value;
-}    
+      key = phonA + "  " phonB + " " + unikey;
+      var value = tridict[key];
+      var update = unikey + "range";
+      document.getElementById(update).innerHTML = value;
+    }    
   }
-    phonA = phonB;
-    phonB = userInput;
+  phonA = phonB;
+  phonB = userInput;
   if (userInput == "#") {
       document.getElementById("enter").disabled = true;
   }
@@ -65762,7 +65765,7 @@ function unigrams() {
     var value = unidict[key];
     var update = key + "range";
     document.getElementById(update).innerHTML = value;
-}
+  }
   document.getElementById("enter").disabled = false;
 }
 
@@ -65776,6 +65779,7 @@ function bigrams() {
     var value = bidict[key];
     var update = unikey + "range";
     document.getElementById(update).innerHTML = value;
+  }
 }
   
 function trigrams() {
@@ -65790,7 +65794,7 @@ function trigrams() {
     var value = tridict[key];
     var update = unikey + "range";
     document.getElementById(update).innerHTML = value;
-}
+  }
 }
 </script>
 </head>
