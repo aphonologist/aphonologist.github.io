@@ -1680,7 +1680,7 @@ function myFunction2() {
   var type;
   
 function unigrams() {
-  document.getElementById("demo").innerHTML = " ";
+  document.getElementById("demo").innerHTML = "#";
   type = 'unigram';
   
   for(var key in unidict) {
@@ -1698,7 +1698,7 @@ function bigrams(lastPhon = "#") {
   document.getElementById("enter").disabled = false;
   
   for(var unikey in unidict) {
-    key = lastPhon + " " + unikey + " ";
+    key = lastPhon + "  " + unikey + " ";
     var value = bidict[key];
     var update = unikey + "range";
     document.getElementById(update).innerHTML = value;
