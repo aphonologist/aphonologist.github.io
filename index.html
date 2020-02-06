@@ -1758,7 +1758,7 @@ function bigrams() {
   document.getElementById("enter").disabled = false;
   
   for(var unikey in unidict) {
-    key = "#  " + unikey + " ";
+    key = "# " + unikey;
     var value = bidict[key];
     var update = unikey + "range";
     document.getElementById(update).innerHTML = value;
