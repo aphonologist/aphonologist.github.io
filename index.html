@@ -10,27 +10,6 @@ table, th, td {
     }
 </style>
 <script>
-function myFunction() {
-  var oldString = document.getElementById("demo").innerHTML;
-  var userInput = document.getElementById("phonostring").value;
-  oldString = oldString + " " + userInput;
-  document.getElementById("demo").innerHTML = oldString;
-  if (type == 'unigram') {
-    unigrams();
-  }
-  if (type == 'bi') {
-    bigrams(userInput);
-  }
-  if (userInput == "#") {
-      document.getElementById("enter").disabled = true;
-  }
-  document.getElementById('phonostring').value = ''
-}
-function myFunction2() {
-  document.getElementById("demo").innerHTML = " ";  
-  document.getElementById("enter").disabled = false;
-}
-
     var bidict = {
 "#  # ":"n/a",
 "#  AA ":"0-2",
@@ -1679,6 +1658,37 @@ function myFunction2() {
   
   var type;
   
+function myFunction() {
+  var oldString = document.getElementById("demo").innerHTML;
+  var userInput = document.getElementById("phonostring").value;
+  oldString = oldString + " " + userInput;
+  document.getElementById("demo").innerHTML = oldString;
+  
+  if (type == 'unigram') {
+    for(var key in unidict) {
+    var value = unidict[key];
+    var update = key + "range";
+    document.getElementById(update).innerHTML = value;
+}
+  }
+  if (type == 'bigram') {
+    for(var unikey in unidict) {
+    key = userInput + "  " + unikey + " ";
+    var value = bidict[key];
+    var update = unikey + "range";
+    document.getElementById(update).innerHTML = value;
+}
+  }
+  if (userInput == "#") {
+      document.getElementById("enter").disabled = true;
+  }
+  document.getElementById('phonostring').value = ''
+}
+function myFunction2() {
+  document.getElementById("demo").innerHTML = " ";  
+  document.getElementById("enter").disabled = false;
+}
+  
 function unigrams() {
   document.getElementById("demo").innerHTML = "#";
   type = 'unigram';
@@ -1688,7 +1698,6 @@ function unigrams() {
     var update = key + "range";
     document.getElementById(update).innerHTML = value;
 }
-
   document.getElementById("enter").disabled = false;
 }
 
