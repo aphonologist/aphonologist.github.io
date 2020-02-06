@@ -65732,17 +65732,18 @@ function myFunction() {
     }
   }
   
-//  if (type == 'trigram') {
-//    for(var unikey in unidict) {
-//      key = phonA + "  " phonB + " " + unikey;
-//      var value = tridict[key];
-//      var update = unikey + "range";
-//      document.getElementById(update).innerHTML = value;
-//    }    
-//  }
+  if (type == 'trigram') {
+    for(var unikey in unidict) {
+      key = phonA + "  " phonB + " " + unikey;
+      var value = tridict[key];
+      var update = unikey + "range";
+      document.getElementById(update).innerHTML = value;
+    }    
+  }
   
-//  phonA = phonB;
-//  phonB = userInput;
+  phonA = phonB;
+  phonB = userInput;
+
   if (userInput == "#") {
       document.getElementById("enter").disabled = true;
   }
