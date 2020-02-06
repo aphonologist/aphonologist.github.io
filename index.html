@@ -1729,6 +1729,7 @@ function myFunction() {
       document.getElementById(update).innerHTML = value;
     }
   }
+  
   if (type == 'trigram') {
     for(var unikey in unidict) {
       key = phonA + "  " phonB + " " + unikey;
@@ -1737,6 +1738,7 @@ function myFunction() {
       document.getElementById(update).innerHTML = value;
     }    
   }
+  
   phonA = phonB;
   phonB = userInput;
   if (userInput == "#") {
@@ -1785,7 +1787,8 @@ function trigrams() {
   
   for(var unikey in unidict) {
     key = "# # " + unikey;
-    var value = tridict[key];
+//    var value = tridict[key];
+    var value = "temp";
     var update = unikey + "range";
     document.getElementById(update).innerHTML = value;
   }
