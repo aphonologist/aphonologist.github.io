@@ -1700,7 +1700,7 @@ function bigrams(lastPhon = "#") {
   for(var unikey in unidict) {
     key = lastPhon + " " + unikey + " ";
     var value = bidict[key];
-    var update = key + "range";
+    var update = unikey + "range";
     document.getElementById(update).innerHTML = value;
 }
   
