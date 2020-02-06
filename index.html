@@ -1708,8 +1708,8 @@ function myFunction() {
   document.getElementById("demo").innerHTML = oldString;
   
   var oldipa = document.getElementById("ipa").innerHTML;
-  oldipa = aaripa[userInput];
-  document.getElementById("ipa").innerHTML = oldipa;
+  var useripa = aaripa[userInput];
+  document.getElementById("ipa").innerHTML = oldipa + useripa;
   
   if (type == 'unigram') {
     for(var key in unidict) {
