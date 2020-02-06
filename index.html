@@ -21150,6 +21150,7 @@ table, th, td {
 "ER B DH": "n/a",
 "ER B EH": "73-79",
 "ER B ER": "80-89",
+
 "ER B EY": "90-99",
 "ER B F": "n/a",
 "ER B G": "n/a",
@@ -65729,6 +65730,7 @@ function myFunction() {
     var value = bidict[key];
     var update = unikey + "range";
     document.getElementById(update).innerHTML = value;
+  }
 }
   if (type == 'trigram') {
     for(var unikey in unidict) {
@@ -65745,6 +65747,7 @@ function myFunction() {
   }
   document.getElementById('phonostring').value = ''
 }
+
 function myFunction2() {
   document.getElementById("demo").innerHTML = "#";
   document.getElementById("ipa").innerHTML = "#";  
