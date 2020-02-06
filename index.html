@@ -15,6 +15,12 @@ function myFunction() {
   var userInput = document.getElementById("phonostring").value;
   oldString = oldString + " " + userInput;
   document.getElementById("demo").innerHTML = oldString;
+  if (type == 'unigram') {
+    unigrams();
+  }
+  if (type == 'bi') {
+    bigrams(userInput);
+  }
   if (userInput == "#") {
       document.getElementById("enter").disabled = true;
   }
@@ -25,67 +31,7 @@ function myFunction2() {
   document.getElementById("enter").disabled = false;
 }
 
-function unigrams() {
-  document.getElementById("demo").innerHTML = " ";
-  
-  var unidict = {
-  "#":  "0-7",
-  "AA": "8-10",
-  "AE": "11-13",
-  "AH": "14-22",
-  "AO": "23-24",  
-  "AW": "25-26",  
-  "AY": "27-28",  
-  "B":  "29-31",
-  "CH": "32-33",
-  "D":  "34-38",
-  "DH": "39-40",
-  "EH": "41-44",
-  "ER": "45-48",
-  "EY": "49-51",
-  "F":  "52-53",
-  "G":  "54-55",
-  "HH": "56-57",
-  "IH": "58-63",
-  "IY": "64-67",
-  "JH": "68-69",
-  "K":  "70-74",
-  "L":  "75-80",
-  "M":  "81-84",
-  "N":  "85-91",
-  "NG": "92-93",
-  "OW": "94-95",
-  "OY": "96-97", 
-  "P":  "98-101",
-  "R":  "102-107", 
-  "S":  "108-113", 
-  "SH": "114-115",
-  "T":  "116-122",
-  "TH": "123-124",
-  "UH": "125-126",
-  "UW": "127-128",
-  "V":  "129-130",
-  "W":  "131-132",
-  "Y":  "133-134",
-  "Z":  "135-138",
-  "ZH": "139-140"
-};
-  for(var key in unidict) {
-    var value = unidict[key];
-    var update = key + "range";
-    document.getElementById(update).innerHTML = value;
-}
-
-  document.getElementById("enter").disabled = false;
-}
-
-function bigrams() {
-  document.getElementById("demo").innerHTML = "#";  
-  document.getElementById("enter").disabled = false;
-  
-  var phonA = "#";
-  
-  var bidict = {
+    var bidict = {
 "#  # ":"n/a",
 "#  AA ":"0-2",
 "#  AE ":"3-6",
@@ -1687,6 +1633,78 @@ function bigrams() {
 "ZH  Z ":"n/a",
 "ZH  ZH":"153-140"
 };
+  
+  var unidict = {
+  "#":  "0-7",
+  "AA": "8-10",
+  "AE": "11-13",
+  "AH": "14-22",
+  "AO": "23-24",  
+  "AW": "25-26",  
+  "AY": "27-28",  
+  "B":  "29-31",
+  "CH": "32-33",
+  "D":  "34-38",
+  "DH": "39-40",
+  "EH": "41-44",
+  "ER": "45-48",
+  "EY": "49-51",
+  "F":  "52-53",
+  "G":  "54-55",
+  "HH": "56-57",
+  "IH": "58-63",
+  "IY": "64-67",
+  "JH": "68-69",
+  "K":  "70-74",
+  "L":  "75-80",
+  "M":  "81-84",
+  "N":  "85-91",
+  "NG": "92-93",
+  "OW": "94-95",
+  "OY": "96-97", 
+  "P":  "98-101",
+  "R":  "102-107", 
+  "S":  "108-113", 
+  "SH": "114-115",
+  "T":  "116-122",
+  "TH": "123-124",
+  "UH": "125-126",
+  "UW": "127-128",
+  "V":  "129-130",
+  "W":  "131-132",
+  "Y":  "133-134",
+  "Z":  "135-138",
+  "ZH": "139-140"
+};
+  
+  var type;
+  
+function unigrams() {
+  document.getElementById("demo").innerHTML = " ";
+  type = 'unigram';
+  
+  for(var key in unidict) {
+    var value = unidict[key];
+    var update = key + "range";
+    document.getElementById(update).innerHTML = value;
+}
+
+  document.getElementById("enter").disabled = false;
+}
+
+function bigrams(lastPhon = "#") {
+  document.getElementById("demo").innerHTML = "#";
+  type = 'bigram';
+  document.getElementById("enter").disabled = false;
+  
+  for(var unikey in unidict) {
+    key = lastPhon + " " + unikey
+    var value = bidict[key];
+    var update = key + "range";
+    document.getElementById(update).innerHTML = value;
+}
+  
+
 
 }
 </script>
