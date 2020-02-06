@@ -1730,17 +1730,17 @@ function myFunction() {
     }
   }
   
-  if (type == 'trigram') {
-    for(var unikey in unidict) {
-      key = phonA + "  " phonB + " " + unikey;
-      var value = tridict[key];
-      var update = unikey + "range";
-      document.getElementById(update).innerHTML = value;
-    }    
-  }
+//  if (type == 'trigram') {
+//    for(var unikey in unidict) {
+//      key = phonA + "  " phonB + " " + unikey;
+//      var value = tridict[key];
+//      var update = unikey + "range";
+//      document.getElementById(update).innerHTML = value;
+//    }    
+//  }
   
-  phonA = phonB;
-  phonB = userInput;
+//  phonA = phonB;
+//  phonB = userInput;
   if (userInput == "#") {
       document.getElementById("enter").disabled = true;
   }
@@ -1778,21 +1778,20 @@ function bigrams() {
   }
 }
   
-function trigrams() {
-  var phonA = "#";
-  var phonB = "#";
-  document.getElementById("demo").innerHTML = "#";
-  type = 'trigram';
-  document.getElementById("enter").disabled = false;
+//function trigrams() {
+//  var phonA = "#";
+//  var phonB = "#";
+//  document.getElementById("demo").innerHTML = "#";
+//  type = 'trigram';
+//  document.getElementById("enter").disabled = false;
   
-  for(var unikey in unidict) {
-    key = "# # " + unikey;
+//  for(var unikey in unidict) {
+//    key = "# # " + unikey;
 //    var value = tridict[key];
-    var value = "temp";
-    var update = unikey + "range";
-    document.getElementById(update).innerHTML = value;
-  }
-}
+//    var update = unikey + "range";
+//    document.getElementById(update).innerHTML = value;
+//  }
+//}
 </script>
 </head>
 <body>
@@ -1815,8 +1814,6 @@ function trigrams() {
 <button type="button" onclick="unigrams()">Use unigrams</button>
 
 <button type="button" onclick="bigrams()">Use bigrams</button>
-  
-<button type="button" onclick="trigrams()">Use trigrams</button>
 
 <table>
   <tr>
