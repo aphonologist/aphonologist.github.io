@@ -65756,6 +65756,8 @@ function myFunction2() {
 }
   
 function unigrams() {
+  phonA = "#";
+  phonB = "#";
   document.getElementById("demo").innerHTML = "#";
   type = 'unigram';
   
@@ -65768,6 +65770,8 @@ function unigrams() {
 }
 
 function bigrams() {
+  phonA = "#";
+  phonB = "#";
   document.getElementById("demo").innerHTML = "#";
   type = 'bigram';
   document.getElementById("enter").disabled = false;
@@ -65780,20 +65784,20 @@ function bigrams() {
   }
 }
   
-//function trigrams() {
-//  var phonA = "#";
-//  var phonB = "#";
-//  document.getElementById("demo").innerHTML = "#";
-//  type = 'trigram';
-//  document.getElementById("enter").disabled = false;
+function trigrams() {
+  phonA = "#";
+  phonB = "#";
+  document.getElementById("demo").innerHTML = "#";
+  type = 'trigram';
+  document.getElementById("enter").disabled = false;
   
-//  for(var unikey in unidict) {
-//    key = "# # " + unikey;
-//    var value = tridict[key];
-//    var update = unikey + "range";
-//    document.getElementById(update).innerHTML = value;
-//  }
-//}
+  for(var unikey in unidict) {
+    key = "# # " + unikey;
+    var value = tridict[key];
+    var update = unikey + "range";
+    document.getElementById(update).innerHTML = value;
+  }
+}
 </script>
 </head>
 <body>
@@ -65816,6 +65820,8 @@ function bigrams() {
 <button type="button" onclick="unigrams()">Use unigrams</button>
 
 <button type="button" onclick="bigrams()">Use bigrams</button>
+
+<button type="button" onclick="trigrams()">Use trigrams</button>
 
 <table>
   <tr>
