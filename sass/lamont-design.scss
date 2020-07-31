@@ -1,0 +1,439 @@
+
+/* ----------------------------------------------------------------
+
+	lamont-design.scss
+
+	INDEX
+	- Home Page
+	- Buttons
+	- Links
+	- Typography
+	- Go To Top
+	- Header/Nav
+
+-----------------------------------------------------------------*/
+
+
+/* Home Page
+============================================= */
+
+.lamont-design {
+
+	hr {
+		border-top: 1px solid #0D6DFF !important;
+	}
+
+	 // Project images
+	.content-photo {
+		border-left: 1px solid #0D6DFF;
+		min-height: 192px;
+	}
+	@media (max-width: 767px) { 
+		.headshot {
+			max-width: 300px;
+		}
+	 }
+	@media (max-width: 576px) { 
+		.headshot {
+			max-width: 200px;
+		}
+	 }
+
+
+	 // Footer
+	.footer {
+		border-top: 1px solid #EAEAEA;
+		margin-top: 120px;
+
+		p {
+			font-family: 'Montserrat', sans-serif;
+			color: #71777C;
+		}
+		a p:hover {
+			color:  #0D6DFF !important;
+		}
+		img {
+			max-height: 20px;
+		}
+	}
+	@media (max-width: 576px) { 
+		.footer {
+			margin-top: 56px;
+		}
+	 }
+
+
+	/* Buttons
+	============================================= */
+
+	.btn.btn-outline {
+		height: 48px;
+		border: 1px solid #0D6DFF;
+		background-color: #ffffff;
+		color:  #0D6DFF;
+		border-radius: 0px;
+		font-size: 16px !important;
+		font-family: 'Roboto Condensed', sans-serif;
+		text-transform: uppercase !important;
+		font-weight: 700 !important;
+		letter-spacing: 2px !important;
+		line-height: 36px !important;
+		min-width: 200px;
+		transition: background-color .3s linear;
+	}
+
+	.btn.btn-outline:hover {
+		background-color: #0D6DFF;
+		color:  #ffffff;
+	}
+
+
+	
+	/* Links
+	============================================= */
+
+	a:hover {
+		color: #0D6DFF !important;
+		font-weight: 700;
+	}
+	a {
+		//font-family: 'Roboto', sans-serif;
+		display: inline-block;
+		position: relative;
+		color: #505961;
+		transition: color .35s ease;
+	}
+	
+	.fancy-hover {
+
+		a:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 2px;
+			width: 0;
+			transition: width 0s ease, background .35s ease;
+		}
+		a:after {
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			height: 2px;
+			width: 0;
+			background: #0D6DFF;
+			transition: width .35s ease;
+		}
+		a:hover:before {
+			width: 100%;
+			background: #0D6DFF;
+			transition: width .35s ease;
+		}
+		a:hover:after {
+			width: 100%;
+			background: transparent;
+			transition: all 0s ease;
+		}
+
+	}
+
+
+	/* Typography
+	============================================= */
+
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		color: #505961;
+		font-weight: 400;
+		font-size: 80px;
+		line-height: 88px;
+		letter-spacing: 1px;
+		text-align: left;
+	}
+	@media (max-width: 767.98px) { 
+		h1 {
+			font-size: 40px;
+			line-height: 50px;
+			letter-spacing: .3px;
+		}
+	 }
+	h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 24px;
+		line-height: 32px;
+		letter-spacing: .5px;
+	}
+	@media (max-width: 767.98px) { 
+		h2 {
+			font-size: 18px;
+			line-height: 27px;
+			letter-spacing: .3px;
+		}
+	 }
+	 h3 {
+		font-family: 'Montserrat', sans-serif;
+		color: #505961;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 30px;
+	}
+	@media (max-width: 767.98px) { 
+		h3 {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	 }
+	p {
+		//color: #505961;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: left;
+	}
+	.fine-print p {
+		font-size: 14px !important;
+		line-height: 32px;	
+	}
+	.font-weight-med {
+		font-weight: 500;
+	}
+	.text-blue {
+		color: #0D6DFF !important;
+	}
+	.paper-title {
+		color: #0D6DFF !important;
+		font-weight: 700;
+	}
+	span.font-weight-bold {
+		color: inherit !important;
+	}
+
+	// Changes selection colors
+	::-moz-selection { /* Code for Firefox */
+		color: #fff;
+		background: #0D6DFF;
+	  } 
+	::selection {
+		color: #fff;
+		background: #0D6DFF;
+	}
+
+
+	/* Go To Top
+	============================================= */
+
+	#gotoTop {
+		background-color: #ffffff;
+		color: #0D6DFF;
+		border: 1px solid #0D6DFF;
+	}
+	#gotoTop:hover {
+		background-color: #0D6DFF;
+		color: #ffffff;
+		border: 1px solid #0D6DFF;
+	}
+	#gotoTop:active {
+		background-color: #0D6DFF;
+		color: #ffffff;
+		border: 1px solid #0D6DFF;
+	}
+
+	/* Header / Nav 
+	============================================= */
+	
+
+	// Menu Links Hover
+	.menu-left a {
+		font-family: 'Montserrat', sans-serif;
+		//color: #505961;
+		display: inline-block;
+		position: relative;
+		transition: color .35s ease;
+	}
+	.menu-left a:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 2px;
+		width: 0;
+		transition: width 0s ease, background .35s ease;
+	}
+	.menu-left a:after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 1.5px;
+		width: 0;
+		background: #0D6DFF;
+		transition: width .35s ease;
+	}
+	.menu-left a:hover:before {
+		width: 100%;
+		background: #0D6DFF;
+		transition: width .35s ease;
+	}
+	.menu-left a:hover:after {
+		width: 100%;
+		background: transparent;
+		transition: all 0s ease;
+	}
+	  
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: .5rem 0;
+		background: rgba(255, 255, 255, 0.92);
+		z-index: 3;
+		will-change: transform;
+		transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+		transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+		transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+	}
+	
+
+	// Header Logo
+	header nav .name {
+	  font-family: 'Montserrat', sans-serif;
+	  color: #505961;
+	  float: left;
+	  padding-top: .25rem;
+	  padding-bottom: .25rem;
+	  margin-right: 1rem;
+	}
+	header nav .name:after {
+	  content: '';
+	  display: table;
+	  clear: both;
+	}
+
+	// Header Links
+	header nav ul {
+	  list-style: none;
+	  padding-left: 0;
+	  margin: 0;
+	}
+	header nav ul li {
+	  float: none;
+	  margin-left: 0;
+	}
+	@media (min-width: 768px) {
+	  header nav ul li {
+		float: left;
+		margin-left: 1rem;
+	  }
+	}
+	header nav ul li a {
+	  display: block;
+	}
+	@media (min-width: 576px) {
+	  header nav ul li a {
+		display: block;
+		padding: .425rem 0rem;
+	  }
+	}
+	@media (max-width: 768px) {
+	  ul {
+		clear: both;
+	  }
+	  ul li {
+		padding: .5em 0;
+	  }
+	}
+	.hide-nav {
+	  transform: translateY(-120% !important);
+	  -webkit-transform: translateY(-120%) !important;
+	}
+	ul.menu-left {
+	  display: block;
+	  max-height: 0;
+	  overflow: hidden;
+	  -webkit-transition: all 0.3s ease-out;
+	  -moz-transition: all 0.3s ease-out;
+	  -ms-transition: all 0.3s ease-out;
+	  -o-transition: all 0.3s ease-out;
+	  transition: all 0.3s ease-out;
+	  z-index: 10;
+	}
+	@media (min-width: 768px) {
+	  ul.menu-left {
+		display: block !important;
+		float: right;
+		max-height: none;
+	  }
+	}
+	// Mobile Menu Background Color
+	@media (max-width: 768px) {
+		ul.menu-left {
+		  //background: rgba(13, 109, 255, .9);
+		}
+	  }
+	// Mobile Menu Font Styling
+	@media (max-width: 768px) {
+		ul li a {
+			//color: rgba(255, 255, 255, 1);
+		}
+	  }
+	  @media (max-width: 768px) {
+		ul li a:active {
+			//color: rgba(255, 255, 255, .9);
+		}
+	  }
+	ul.menu-left:before {
+	  content: '';
+	  display: table;
+	  clear: both;
+	}
+	ul.menu-left.collapse {
+	  max-height: 15em !important;
+	}
+	
+	// Mobile Hamburger Menu
+	.nav-toggle {
+	  display: block;
+	  border-radius: 5px;
+	  background-color: transparent;
+	  float: right;
+	  height: 38px;
+	  width: 38px;
+	  cursor: pointer;
+	  padding: 8px 8px;
+	}
+	.nav-toggle.open span:first-child {
+	  transform: rotate(45deg) translate(4.4px, 4.4px);
+	}
+	.nav-toggle.open span:nth-child(2) {
+	  width: 0%;
+	  opacity: 0;
+	}
+	.nav-toggle.open span:last-child {
+	  transform: rotate(-45deg) translate(4.4px, -4.4px);
+	}
+	@media (min-width: 768px) {
+	  .nav-toggle {
+		display: none;
+	  }
+	}
+	.nav-toggle span {
+	  position: relative;
+	  display: block;
+	  height: 2px;
+	  width: 100%;
+	  margin-top: 4px;
+	  background-color: #333132;
+	  transition: all .25s;
+	}
+	
+}
+
+
