@@ -1927,7 +1927,7 @@ MID,"gaston, i'm speechless. i really don't know what to say. ",PRINCESS,Beauty 
 MID,say you'll marry me. ,NON-P,Beauty and the Beast ,gaston,1991,205
 MID,"i'm very sorry, gaston, but i just don't deserve you. ",PRINCESS,Beauty and the Beast ,belle,1991,206
 MID,. belle ducks under gaston as he tumbles out the door and into the mud.,PRINCESS,Beauty and the Beast ,belle,1991,207
-MID,"who is directing the band, looks down and sees gaston's legs sticking out of the mud, and a pierre's head sticking up. lefou cuts off the band, and gaston's head pops up, with the pig on top of him. he tilts his head, and the pig slides down his back.",NON-P,Beauty and the Beast ,"lefou, ",1991,208
+MID,"who is directing the band, looks down and sees gaston's legs sticking out of the mud, and a pierre's head sticking up. lefou cuts off the band, and gaston's head pops up, with the pig on top of him. he tilts his head, and the pig slides down his back.",NON-P,Beauty and the Beast ,lefou,1991,208
 MID,"so, how'd it go? ",NON-P,Beauty and the Beast ,lefou,1991,209
 MID,"i'll have belle for my wife, make no mistake about that! ",NON-P,Beauty and the Beast ,gaston,1991,210
 MID,touchy! ,NON-P,Beauty and the Beast ,lefou,1991,211
@@ -3604,13 +3604,13 @@ MID,oh no. not the birdieboiler. ,NON-P,The Lion King ,zazu,1994,267
 MID,hey! why don't you pick on somebody your own size? ,PRINCE,The Lion King ,simba,1994,268
 MID,like... you? ,NON-P,The Lion King ,shenzi,1994,269
 MID,oops. ,PRINCE,The Lion King ,simba,1994,270
-MID,boo! ,NON-P,The Lion King ,"shenzi, banzai, ed",1994,271
+MID,boo! ,NON-P,The Lion King ,shenzi & banzai & ed,1994,271
 MID,simba! ,PRINCESS,The Lion King ,nala,1994,272
 MID,aaaaiee! ,PRINCESS,The Lion King ,nala,1994,273
 MID,"look, boys! a king fit for a meal! ",NON-P,The Lion King , shenzi,1994,274
 MID,"here, kitty, kitty, kitty. ",NON-P,The Lion King ,banzai,1994,275
 MID,oohoo... that was it? hah. do it again... come on. ,NON-P,The Lion King ,shenzi,1994,276
-MID,huh?! ,NON-P,The Lion King ,"shenzi, banzai, ed",1994,277
+MID,huh?! ,NON-P,The Lion King ,shenzi & banzai & ed,1994,277
 MID,"oh, please, please. uncle. uncle. ",NON-P,The Lion King ,shenzi,1994,278
 MID,ow. ow. ow. ,NON-P,The Lion King ,banzai,1994,279
 MID,silence! ,NON-P,The Lion King ,mufasa,1994,280
@@ -6173,8 +6173,8 @@ LATE,gotcha! that's twentytwo for me. how about twenty three out of forty five? 
 LATE,"okay, well, what do you wanna do? ",PRINCESS,Tangled ,rapunzel,2010,17
 LATE,"yeah, i don't think so. i like it in here and so do you. ",PRINCESS,Tangled ,rapunzel,2010,18
 LATE,"oh, come on, pascal, it's not so bad in there... ",PRINCESS,Tangled ,rapunzel,2010,19
-LATE,"start on the chores and sweep 'til the floor's all clean polish and wax, do laundry, and mop and shine up ",NON-P,Tangled ,"7 am, the usual morning lineup",2010,20
-LATE,"15. and so i'll read a book or maybe two or three i'll add a few new paintings to my gallery i'll play guitar and knit and cook and basically just wonder when will my life begin? then after lunch it's puzzles and darts and baking papier mache, a bit of ballet and chess pottery and ventriloquy, candle making then i'll stretch, maybe sketch, take a climb, sew a dress! and i'll reread the books if i have time to spare i'll paint the walls some more, i'm sure there's room somewhere. and then i'll brush and brush, and brush and brush my hair stuck in the same place i've always been. and i'll keep wonderin' and wonderin' and wonderin' and wonderin' when will my life begin? tomorrow night, lights will appear just like they do on my birthday each year. what is it like out there where they glow? now that i'm older, mother might just let me go ... ",NON-P,Tangled ,"sweep again, and by then it's like 7",2010,21
+LATE,"start on the chores and sweep 'til the floor's all clean polish and wax, do laundry, and mop and shine up ",NON-P,Tangled ,7 am the usual morning lineup,2010,20
+LATE,"15. and so i'll read a book or maybe two or three i'll add a few new paintings to my gallery i'll play guitar and knit and cook and basically just wonder when will my life begin? then after lunch it's puzzles and darts and baking papier mache, a bit of ballet and chess pottery and ventriloquy, candle making then i'll stretch, maybe sketch, take a climb, sew a dress! and i'll reread the books if i have time to spare i'll paint the walls some more, i'm sure there's room somewhere. and then i'll brush and brush, and brush and brush my hair stuck in the same place i've always been. and i'll keep wonderin' and wonderin' and wonderin' and wonderin' when will my life begin? tomorrow night, lights will appear just like they do on my birthday each year. what is it like out there where they glow? now that i'm older, mother might just let me go ... ",NON-P,Tangled ,sweep again and by then it's like 7,2010,21
 LATE,wow! i could get used to view like this. ,PRINCE,Tangled ,flynn,2010,22
 LATE,rider! c'mon! ,NON-P,Tangled ,stabbington,2010,23
 LATE,"hold on. yup, i'm used to it. guys, i want a castle. ",PRINCE,Tangled ,flynn,2010,24
@@ -6812,7 +6812,7 @@ LATE,you must learn to control it. ,NON-P,Frozen ,pabbie ,2013,51
 LATE,pabbie fear will be your enemy. ,NON-P,Frozen ,pabbie ,2013,52
 LATE,no. we'll protect her. she can learn to control it. i'm sure. king ,NON-P,Frozen ,king ,2013,53
 LATE,"until then, we'll lock the gates. we'll reduce the staff. we will limit her contact with people and keep her powers hidden from everyone... including anna. ",NON-P,Frozen ,king ,2013,54
-LATE,'s door — day anna knocks on elsa's door and sings. “do you want to build a snowman?”,NON-P,Frozen ,"int. hallway, elsa",2013,55
+LATE,'s door — day anna knocks on elsa's door and sings. “do you want to build a snowman?”,NON-P,Frozen ,int. hallway elsa,2013,55
 LATE,do you want to build a snowman? come on let's go and play. ,PRINCESS,Frozen ,anna,2013,56
 LATE,i never see you anymore. come out the door. it's like you've gone away. ,PRINCESS,Frozen ,anna,2013,57
 LATE,we used to be best buddies and now we're not. i wish you would tell me why. ,PRINCESS,Frozen ,anna,2013,58
